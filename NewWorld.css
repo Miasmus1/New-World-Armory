@@ -11,13 +11,22 @@ body {
     text-align: center;
 }
 
-.backgroundnw {
-    display: block;
-    position: relative;
+
+.nwback {
+    position: fixed;
     width: 100%;
     height: 100%;
-    background: url(https://d2lchq0n03yu65.cloudfront.net/statics/2021-03-05/images/texture-bottom.jpg) no-repeat bottom, url(https://d2lchq0n03yu65.cloudfront.net/statics/2021-03-05/images/diamond-texture-top.png) no-repeat top;
+    z-index: -1;
 }
+
+.backgroundtop {
+    background: url(https://d2lchq0n03yu65.cloudfront.net/statics/2021-03-05/images/diamond-texture-top.png) no-repeat top;
+}
+
+.backgroundbottom {
+    background: url(https://d2lchq0n03yu65.cloudfront.net/statics/2021-03-05/images/texture-bottom.jpg) no-repeat bottom;
+}
+
 .bg-custom {
     background-color: #232220;
 }
@@ -100,11 +109,14 @@ body {
 }
 
 .newworldvideo {
+    position: relative;
     max-width: 100%;
+    /* height: 720px; */
 }
 
 .videoplayer {
     position: relative;
+    /* height: 720px; */
 }
 
 .aeternum {
@@ -123,6 +135,13 @@ body {
 .logocont {
     text-align: center;
 }
+
+@media (min-width: 996px) { .logocont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}}
 
 .overlaybtn {
     border: 1px solid #ffb10f;
@@ -164,19 +183,19 @@ body {
     background-image: url(https://d2lchq0n03yu65.cloudfront.net/statics/2021-03-05/images/new-world-sprites.png);
 }
 
-@media (max-width: 768px) { .newworldvideo {
+@media (max-width: 996px) { .newworldvideo {
     display: none;
 }}
 
-@media (min-width: 768px) { .mobileart {
+@media (min-width: 996px) { .mobileart {
     display:none;
 }}
 
-@media (max-width: 768px) {.mobileart {
+@media (max-width: 996px) {.mobileart {
     max-width: 100%;
     background-size: cover;
 }}
 
-@media (max-width: 768px) { .logocont {
+@media (max-width: 996px) { .logocont {
     display: block;
 }}
