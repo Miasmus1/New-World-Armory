@@ -110,6 +110,19 @@ body {
     border-color: #ffb10f;
 }
 
+.navbar-toggler {
+    border: 1px solid #d5d5d5;
+    border-radius: 0;
+}
+
+.navbar-toggler:hover {
+    background-color: #d5d5d52d;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .newworldvideo {
     position: relative;
     max-width: 100%;
@@ -129,6 +142,7 @@ body {
     color: #eeefed;
     margin-top: 0.5em;
     line-height: 1.5;
+    white-space: nowrap;
 }
 
 .nwlogotext {
