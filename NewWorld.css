@@ -25,6 +25,7 @@ body {
 
 .backgroundbottom {
     background: url(https://d2lchq0n03yu65.cloudfront.net/statics/2021-03-05/images/texture-bottom.jpg) no-repeat bottom;
+    z-index: -2;
 }
 
 .bg-custom {
@@ -91,6 +92,7 @@ body {
     color: #eeefed;
     font-size: 0.9em;
     text-align: center;
+    transition: 0.4s;
 }
 
 .nwbtnlog:nth-of-type(3) {
@@ -126,6 +128,7 @@ body {
     font-size: 1.5em;
     color: #eeefed;
     margin-top: 0.5em;
+    line-height: 1.5;
 }
 
 .nwlogotext {
@@ -136,7 +139,51 @@ body {
     text-align: center;
 }
 
-@media (min-width: 996px) { .logocont {
+.textcontent {
+    margin-top: 1.5em;
+}
+
+.headernw {
+    letter-spacing: 0.2em;
+    color: #d5d5d5;
+    margin-top: 1.2em;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: left;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.card-body {
+    padding: 24px 0 60px;
+}
+
+.cardbtn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #ffb10f;
+    padding: 0;
+}
+
+.cardbtn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #d5d5d5;
+}
+
+.breaker {
+    background-image: url(https://d2lchq0n03yu65.cloudfront.net/statics/2021-03-05/images/new-world-sprites.png);
+    background-position: -1px -264px;
+    margin: 2em auto 2em;
+    width: 550px;
+    height: 1px;
+}
+
+@media (min-width: 778px) { .logocont {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -174,28 +221,72 @@ body {
     color: #eeefed;
 }
 
+.overlaybtn:hover:nth-of-type(2) > .videologo {
+    filter: grayscale(1) brightness(1.31);
+}
+
 .videologo {
     display: inline-block;
-    margin-bottom: -0.24em;
+    transition: 0.4s;
+    margin-bottom: -0.2em;
     margin-right: 0.4em;
     width: 25px;
     height: 18px;
     background-image: url(https://d2lchq0n03yu65.cloudfront.net/statics/2021-03-05/images/new-world-sprites.png);
 }
 
-@media (max-width: 996px) { .newworldvideo {
+.breakerss {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) { .newworldvideo {
     display: none;
 }}
 
-@media (min-width: 996px) { .mobileart {
+@media (min-width: 768px) { .mobileart {
     display:none;
 }}
 
-@media (max-width: 996px) {.mobileart {
+@media (max-width: 768px) {.mobileart {
     max-width: 100%;
-    background-size: cover;
+    background-size: fill;
 }}
 
-@media (max-width: 996px) { .logocont {
+@media (max-width: 768px) { .logocont {
     display: block;
+}}
+
+@media (max-width: 768px) { .breaker {
+    width: 70%;
+}}
+
+@media (max-width: 768px) { .overlaybtn:nth-of-type(2) {
+    margin-top: 0;
+}}
+
+@media (max-width: 768px) {.nwlogotext {
+    margin-top: -3em;
+}}
+
+@media (max-width: 768px) { .breakerss {
+    display: none;
+}}
+
+.breakerssmobile {
+    max-width: 100%;
+}
+
+@media (min-width: 768px) { .breakerssmobile {
+    display: none;
+}}
+
+.footer {
+    height: 10px;
+    width: 100%;
+    background: url(https://d2lchq0n03yu65.cloudfront.net/statics/2021-03-05/images/new-world-sprites.png) 0px -282px;
+    margin-top: 5em;
+}
+
+@media (max-width: 768px) {.footer {
+    width: 100%;
 }}
