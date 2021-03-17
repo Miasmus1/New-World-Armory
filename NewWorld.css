@@ -11,6 +11,15 @@ body {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
 
 .nwback {
     position: fixed;
@@ -173,8 +182,31 @@ body {
     text-align: left;
 }
 
+
+.img-wrap {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: all 0.4s ease;
+}
+
+.card-img-top:hover {    
+    transform: scale(1.1);
+}
+
+.card-title {
+    transition: all 0.4s ease;
+}
+
+.card-title:hover {
+    filter: brightness(1.5);
+}
+
 .card-text {
     margin: 0;
+    font-size: 0.9em;
 }
 
 .card-body {
@@ -326,3 +358,23 @@ body {
 @media (max-width: 768px) {.nwbtnlog:nth-of-type(4){
     margin-bottom: 1em;
 }}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d5d5d5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #141312;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffb10f;
+  }
