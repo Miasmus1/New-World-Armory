@@ -20,6 +20,10 @@ a:hover {
     color: inherit;
 }
 
+#bgColor {
+    background-color: #232220;
+    z-index: -5;
+}
 
 .nwback {
     position: fixed;
@@ -143,6 +147,7 @@ a:hover {
 }
 
 .videoplayer {
+    display: flex;
     position: relative;
     /* height: 720px; */
 }
@@ -288,6 +293,12 @@ a:hover {
 
 .breakerss {
     max-width: 100%;
+}
+
+@media (max-width: 770px) { .videoplayer {
+    display: block;
+}
+    
 }
 
 @media (max-width: 770px) { .newworldvideo {
